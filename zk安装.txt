@@ -1,0 +1,12 @@
+1、tar xzf zookeeper-3.4.10.tar.gz 
+2、cd /usr/local/newtech/zookeeper-3.4.10
+3、mv conf/zoo_sample.cfg conf/zoo.cfg
+4、bin/zkServer.sh start
+5、bin/zkCli.sh
+    ls /
+    create /workers ""
+    ls /
+    delete /workers
+    ls /
+    quit
+    bin/zkServer.sh stop
